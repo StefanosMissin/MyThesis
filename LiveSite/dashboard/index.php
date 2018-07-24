@@ -7,7 +7,13 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
   header("location:../user/login.php");
   exit;
 }
+
 ?>
+
+    <!-- Navigation Location Title -->
+    <?php
+        $navloctitle = 'Dashboard';
+    ?>
 
     <!-- Include head tag -->
     <?php include 'static/head.html';?>
@@ -22,6 +28,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
     <!-- Start Page Content -->
     <!-- ============================================================== -->
+            <!-- Column -->
+            <div class="col-lg-6 col-xlg-6 col-md-7">
+            <div class="card">
+                <div class="card-block">
+                <canvas id="myChart"></canvas>
+
+                </div>
+            </div>
+        </div>
+        <!-- Column -->
+    
 
 
     <!-- ============================================================== -->

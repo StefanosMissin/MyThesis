@@ -41,6 +41,13 @@
 <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
 <!--Custom JavaScript -->
 <script src="js/custom.min.js"></script>
+
+
+<!-- Chartsjs.org -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="charts/testchart.js"></script>
+    <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+
 <!-- ============================================================== -->
 <!-- This page plugins -->
 <!-- ============================================================== -->
@@ -55,6 +62,24 @@
   modal.find('.modal-title').text('Support Form')
   modal.find('.modal-body input').val(recipient)
 })
+</script>
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =
+    'Current Time:' + '  ' + h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
 </script>
 
 </body>

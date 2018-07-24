@@ -11,6 +11,11 @@
     ?>
 
 
+    <!-- Navigation Location Title -->
+    <?php
+        $navloctitle = 'Profile';
+    ?>
+
     <!-- Include head tag -->
     <?php include 'static/head.html';?>
 
@@ -63,7 +68,7 @@
                         <div class="row text-center justify-content-md-center">
                             <div class="col-12">
                                 <a href="#" class="link">
-                                    <i class="icon-people" style="padding-right: 5px"></i> Family Members Registered:
+                                    <i class="icon-people" style="padding-right: 5px"></i> Users Registered:
                                     <?php 
                                                 require_once '../user/config.php';
                                                 $result = mysqli_query($link, "SELECT COUNT(*) AS `count` FROM `users`");
