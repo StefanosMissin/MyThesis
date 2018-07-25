@@ -101,6 +101,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main2.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -119,7 +120,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						<span class="symbol-input100">
 							<i class="fa fa-user"></i>
 						</span>
+                        
 					</div>
+
+                    <span style="color:#fff; padding-left:40px; margin-bottom:10px;"><?php echo $username_err; ?></span>
+
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Password is required">
 						<input class="input100" type="password" name="password" placeholder="Password">
@@ -127,10 +132,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						<span class="symbol-input100">
 							<i class="fa fa-lock"></i>
 						</span>
+                    
 					</div>
 
+                    <span style="color:#fff; padding-left:40px; margin-bottom:10px;"><?php echo $password_err; ?></span>
+
 					<div class="container-login100-form-btn p-t-10 p-b-230">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn wid-50">
 							Login
 						</button>
 					</div>

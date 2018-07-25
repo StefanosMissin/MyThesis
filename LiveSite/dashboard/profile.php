@@ -58,7 +58,7 @@
             <div class="card">
                 <div class="card-block">
                     <center class="m-t-30">
-                        <img src="assets/images/users/smissin.jpg" class="img-circle" width="150" />
+                        <img src="assets/images/users/smissin.jpg" class="img-circle" width="200" />
                         <h4 class="card-title m-t-10" style="font-weight: 600">
                             <?php echo htmlspecialchars($_SESSION['username']); ?>
                         </h4>
