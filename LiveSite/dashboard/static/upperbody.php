@@ -107,6 +107,19 @@
                                 <span class="hide-menu">Profile</span>
                             </a>
                         </li>
+                        <?php
+                            if ($_SESSION['adminuser'] == 'yes'){
+
+                                echo " <li>
+                                <a class='waves-effect waves-dark' href='newuserreg.php' aria-expanded='false'>
+                                    <i class='mdi mdi-account-plus'></i>
+                                    <span class='hide-menu'>Register User</span>
+                                </a>
+                            </li> ";
+                                
+                            }
+
+                        ?>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

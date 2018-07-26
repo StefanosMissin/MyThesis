@@ -7,3 +7,29 @@
     color: #fff;
     padding-right: 10px;
 }
+
+.reg-newuser-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.reg-newuser-btn {
+    padding: 10px 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.reg-newuser-checkbox {
+    
+        position: absolute; 
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+      
+      
+}
