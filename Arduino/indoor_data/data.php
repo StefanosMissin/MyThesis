@@ -9,8 +9,11 @@ define('DB_NAME', 'Smart_Homie');
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+
+
+$sql = "INSERT INTO indoor_data (temperature, humidity) VALUES ('".$_GET["temperature"]."', '".$_GET["humidity"]."')";
+
+mysqli_query($link,$sql);
+
+echo "success"
 ?>
