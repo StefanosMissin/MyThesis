@@ -1,3 +1,18 @@
 .wid-50 {
     width: 50%;
 }
+
+.admin-box {
+    background-color: #fff;
+    border-radius: 35px;
+    height: 50px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.admin-title {
+    margin-top: 11px;
+    font-size: 16px;
+    color: #999 !important;
+    font-weight: 900;
+}

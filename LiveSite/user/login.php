@@ -3,8 +3,8 @@
 require_once 'config.php';
  
 // Define variables and initialize with empty values
-$username = $password = "";
-$username_err = $password_err = "";
+$username = $email =  $password = "";
+$username_err = $email_err = $password_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT username, password, email FROM users WHERE username = ?";
+        $sql = "SELECT username, email, password FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -43,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $username, $hashed_password, $email);
+                    mysqli_stmt_bind_result($stmt, $username, $email, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             /* Password is correct, so start a new session and
