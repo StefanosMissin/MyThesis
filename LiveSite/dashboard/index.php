@@ -15,35 +15,37 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         $navloctitle = 'Dashboard';
     ?>
 
-    <!-- Include head tag -->
-    <?php include 'static/head.html';?>
+        <!-- Include head tag -->
+        <?php include 'static/head.html';?>
 
 
-    <title>Smart Homie - Dashboard</title>
-    </head>
+        <title>Smart Homie - Dashboard</title>
+        </head>
 
-    <!-- Start Container  -->
-    <?php include 'static/upperbody.php';?>
+        <!-- Start Container  -->
+        <?php include 'static/upperbody.php';?>
 
 
-    <!-- Start Page Content -->
-    <!-- ============================================================== -->
-            <!-- Column -->
-            <div class="col-lg-6 col-xlg-6 col-md-7">
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- Column -->
+        <div class="col-lg-6 col-xlg-6 col-md-7">
             <div class="card">
                 <div class="card-block">
-                <canvas id="myChart"></canvas>
-
+                    <canvas id="myChart"></canvas>
                 </div>
             </div>
         </div>
         <!-- Column -->
-    
 
+<script>
+    <?php $testvar = "50,60,70,80,90,100" ?>
+    var testarray = [<?php echo $testvar ?>];
+    alert(testarray);
+</script>
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
 
-    <!-- ============================================================== -->
-    <!-- End PAge Content -->
-    <!-- ============================================================== -->
-
-    <!-- Close Container  -->
-    <?php include 'static/lowerbody.php';?>
+        <!-- Close Container  -->
+        <?php include 'static/lowerbody.php';?>

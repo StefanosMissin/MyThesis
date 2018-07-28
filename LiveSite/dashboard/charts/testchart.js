@@ -1,3 +1,15 @@
+var result = [];
+
+function returnarray()
+{
+    array = [25.7,33.2,10.3,30.9,50,60];
+    return array;
+    
+}
+
+
+
+result = returnarray();
 
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
@@ -6,7 +18,7 @@ var myChart = new Chart(ctx, {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
             label: '# of Votes',
-            data: [25, 19, 3, 5, 2, 3],
+            data: testarray,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
