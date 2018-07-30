@@ -7,17 +7,15 @@ function returnarray()
     
 }
 
-
-
 result = returnarray();
 
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
+var ctx = document.getElementById("IndoorData").getContext('2d');
+var IndoorData = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
-            label: '# of Votes',
+            label: 'Indoor Temperature',
             data: testarray,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',

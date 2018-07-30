@@ -32,17 +32,32 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         <div class="col-lg-6 col-xlg-6 col-md-7">
             <div class="card">
                 <div class="card-block">
-                    <canvas id="myChart"></canvas>
+                    <canvas id="IndoorData"></canvas>
                 </div>
             </div>
         </div>
         <!-- Column -->
 
-<script>
-    <?php $testvar = "50,60,70,80,90,100" ?>
-    var testarray = [<?php echo $testvar ?>];
-    alert(testarray);
-</script>
+
+        <!-- Column -->
+        <div class="col-lg-6 col-xlg-6 col-md-7">
+            <div class="card">
+                <div class="card-block">
+                    <canvas id="OutdoorData"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- Column -->
+
+
+        <!-- VALUES OF CHARTS -->
+        <script>
+            <?php $testvar = "110,60,70,80,90,100" ?>
+            var testarray = [<?php echo $testvar ?>];
+            // alert(testarray);
+        </script>
+
+
         <!-- ============================================================== -->
         <!-- End PAge Content -->
         <!-- ============================================================== -->

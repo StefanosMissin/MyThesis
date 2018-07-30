@@ -47,7 +47,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
     <!-- <script src="charts/ajax.js"></script> -->
-    <script src="charts/testchart.js"></script>
+    <script src="charts/indoordata.js"></script>
+    <script src="charts/outdoordata.js"></script>
     
     <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
 
