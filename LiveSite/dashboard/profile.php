@@ -37,7 +37,7 @@
                 <div class="card">
                     <div class="card-block">
                         <center class="m-t-30">
-                            <img src="assets/images/users/profile-info.png" class="img-circle" width="200" />
+                            <img src="assets/images/users/profile-info.png" style="margin-left: 5px" class="img-circle" width="200" />
                             <h4 class="card-title m-t-10" style="font-weight: 600">
                                 <?php echo htmlspecialchars($_SESSION['username']); ?>
                             </h4>
@@ -57,7 +57,7 @@
                                         ?>
                                     </a>
                                 </div>
-                                <div class="col-12" style="padding-top: 5px">
+                                <div class="col-12" style="padding-top: 5px; padding-bottom: 27px;">
                                     <a href="#" class="link">
                                         <i class="icon-energy" style="padding-right: 5px"></i> Access Level:
                                         <?php 
@@ -76,33 +76,47 @@
                 </div>
             </div>
             <!-- Column -->
+
+                                                    
+
             <!-- Column -->
             <div class="col-lg-6 col-xlg-6 col-md-7">
                 <div class="card">
                     <div class="card-block">
-                        <form class="form-horizontal form-material">
+                        <p class="reg-newuser-title">Update Your Credentials</p>
+                        <form class="form-horizontal form-material" action="updateprof.php" method="post">
                             <div class="form-group">
                                 <label class="col-md-12">Full Name</label>
                                 <div class="col-md-12">
-                                    <input type="text" placeholder="<?php echo htmlspecialchars($_SESSION['username']); ?>" class="form-control form-control-line">
+                                    <input type="text" placeholder="<?php echo htmlspecialchars($_SESSION['username']); ?>" class="form-control form-control-line"
+                                    name="username-update">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="example-email" class="col-md-12">Email</label>
+                                <label class="col-md-12">Email</label>
                                 <div class="col-md-12">
                                     <input type="email" placeholder="<?php echo htmlspecialchars($_SESSION['email']); ?>" class="form-control form-control-line"
-                                        name="example-email" id="example-email">
+                                        name="email-update">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-12">Password</label>
                                 <div class="col-md-12">
-                                    <input type="password" value="password" class="form-control form-control-line">
+                                    <input type="text" placeholder="" class="form-control form-control-line" 
+                                    name="password-update">
                                 </div>
+                            </div>
+                            <div>
+                                <input style="display:none" type="text" placeholder="<?php echo htmlspecialchars($_SESSION['username']); ?>" class="form-control form-control-line"
+                                    name="old-username" value="<?php echo htmlspecialchars($_SESSION['username']); ?>">
+                                <input style="display:none" type="text" placeholder="<?php echo htmlspecialchars($_SESSION['email']); ?>" class="form-control form-control-line"
+                                    name="old-email" value="<?php echo htmlspecialchars($_SESSION['email']); ?>">
+                                <input style="display:none" type="text" placeholder="<?php echo htmlspecialchars($_SESSION['password']); ?>" class="form-control form-control-line"
+                                    name="old-password" value="<?php echo htmlspecialchars($_SESSION['password']); ?>">
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <button class="btn btn-success">Update Profile</button>
+                                    <button class="btn btn-success" name="update-btn">Update Profile</button>
                                 </div>
                             </div>
                         </form>

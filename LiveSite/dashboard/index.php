@@ -49,6 +49,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         </div>
         <!-- Column -->
 
+        <!-- Column -->
+        <div class="col-lg-3 col-xlg-3 col-md-4">
+            <div class="card">
+                <div class="card-block" style="text-align: center">
+                         <iframe src="http://smissinhome.ddns.net:61459" frameBorder="0" width="120px" height="100px"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Column -->
+
+
 
         <!-- VALUES OF CHARTS -->
         <script>
