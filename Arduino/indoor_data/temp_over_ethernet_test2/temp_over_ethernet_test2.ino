@@ -13,6 +13,7 @@ byte ip[] = {192, 168, 1, 76 }; //Read the code explanation below
 byte serv[] = {192, 168, 1, 65} ; //Read the code explanation below
 EthernetClient cliente;
 void setup() {
+delay(30000);
 Serial.begin(9600); //setting the baud rate at 9600
 Ethernet.begin(mac, ip);
 
@@ -45,5 +46,5 @@ else {
 // if you didn't get a connection to the server:
 Serial.println("connection failed");
 }
-delay(5000);
+delay(30000);
 }

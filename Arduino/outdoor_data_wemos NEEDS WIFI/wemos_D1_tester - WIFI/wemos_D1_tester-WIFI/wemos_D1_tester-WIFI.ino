@@ -19,7 +19,7 @@ const int led = 13;
  
 void handleRoot() {
   digitalWrite(led, 1);
-  server.send(200, "text/plain", "Geia sou magka!");
+  server.send(200, "text/plain", "Geia sou magka!!!!!!!!!!!!!!!!!!!");
   digitalWrite(led, 0);
 }
  
