@@ -96,5 +96,5 @@ void loop(void)
     Serial.println("--> connection failed\n");
   }
 
-  delay(60000); 
+  delay(120000); 
 } 

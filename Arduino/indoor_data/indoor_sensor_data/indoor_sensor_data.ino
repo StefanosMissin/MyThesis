@@ -1,5 +1,3 @@
-
-
 #include <SPI.h>
 #include <Ethernet.h>
 #include <dht.h>
@@ -46,5 +44,5 @@ else {
 // if you didn't get a connection to the server:
 Serial.println("connection failed");
 }
-delay(30000);
+delay(120000);
 }
