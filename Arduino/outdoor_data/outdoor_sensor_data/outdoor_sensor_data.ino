@@ -72,7 +72,7 @@ void loop(void)
  
   
 
-  if (client.connect("192.168.1.65", 8080)) {
+  if (client.connect("192.168.1.66", 8080)) {
     Serial.println("connected to server");
     
     client.print("GET /MyThesis/Arduino/outdoor_data/data.php?"); // This
@@ -85,7 +85,7 @@ void loop(void)
     Serial.print(" Temp=");
     Serial.println(t);
     client.println(" HTTP/1.1"); // Part of the GET request
-    client.println("Host: 192.168.1.65"); // IMPORTANT: If you are using XAMPP you will have to find out the IP address of your computer and put it here 
+    client.println("Host: 192.168.1.66"); // IMPORTANT: If you are using XAMPP you will have to find out the IP address of your computer and put it here 
     client.println("Connection: close"); // Part of the GET request telling the server that we are over transmitting the message
     client.println(); // Empty line
     client.println(); // Empty line

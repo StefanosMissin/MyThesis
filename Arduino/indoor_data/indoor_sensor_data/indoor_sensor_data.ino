@@ -8,7 +8,7 @@ dht DHT; // Creats a DHT object
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 byte ip[] = {192, 168, 1, 76 }; //Read the code explanation below
-byte serv[] = {192, 168, 1, 65} ; //Read the code explanation below
+byte serv[] = {192, 168, 1, 66} ; //Read the code explanation below
 EthernetClient cliente;
 void setup() {
 delay(30000);
