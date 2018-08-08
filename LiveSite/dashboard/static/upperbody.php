@@ -58,10 +58,10 @@
                         <!-- Time -->
                         <!-- ============================================================== -->
                         <li class="nav-item hidden-sm-down">
-                        <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="#">
-                            <div id="clock"></div>
+                            <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="#">
+                                <div id="clock"></div>
                             </a>
-                        
+
                         </li>
 
                     </ul>
@@ -166,12 +166,16 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 col-8 align-self-center">
-                        <h3 class="text-themecolor"><?php echo htmlspecialchars($navloctitle); ?></h3>
+                        <h3 class="text-themecolor">
+                            <?php echo htmlspecialchars($navloctitle); ?>
+                        </h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="javascript:void(0)">Home</a>
                             </li>
-                            <li class="breadcrumb-item active"><?php echo htmlspecialchars($navloctitle); ?></li>
+                            <li class="breadcrumb-item active">
+                                <?php echo htmlspecialchars($navloctitle); ?>
+                            </li>
                         </ol>
                     </div>
                     <div class="col-md-7 col-4 align-self-center">
@@ -203,32 +207,53 @@
                     </div>
                 </div>
 
+                <!-- DeleteUser Modal -->
+                <div class="modal fade" id="DeleteUserModal" tabindex="-1" role="dialog" aria-labelledby="DeleteUserModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="DeleteUserModalTitle">Smart Homie</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Click on the button to end your session.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success" onclick="window.location.href='../user/logout.php'">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Support Modal -->
                 <div class="modal fade" id="SupportModal" tabindex="-1" role="dialog" aria-labelledby="SupportModalTitle" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="SupportModalTitle">New message</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="form-group">
-                              <label for="recipient-name" class="col-form-label">Recipient:</label>
-                              <input type="text" class="form-control" id="recipient-name">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="SupportModalTitle">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <div class="form-group">
-                              <label for="message-text" class="col-form-label">Message:</label>
-                              <textarea class="form-control" id="message-text"></textarea>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
                             </div>
-                          </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Submit</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-success">Submit</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                </div>

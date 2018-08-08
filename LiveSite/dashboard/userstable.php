@@ -12,7 +12,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
     <!-- Navigation Location Title -->
     <?php
-            $navloctitle = 'Dashboard';
+            $navloctitle = 'Registered Users';
         ?>
 
         <!-- Include head tag -->
@@ -31,7 +31,9 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
         <div class="row">
             <!-- column -->
-            <div class="col-lg-12">
+            <div class="col-2">
+            </div>
+            <div class="col-8">
                 <div class="card">
                     <div class="card-block">
                         <h4 class="users-table-title">Registered Users Table</h4>
@@ -39,10 +41,11 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>UserName</th>
-                                        <th>Email</th>
-                                        <th>Admin Rights</th>
+                                        <th class='users-table-center'>ID</th>
+                                        <th class='users-table-center'>UserName</th>
+                                        <th class='users-table-center'>Email</th>
+                                        <th class='users-table-center'>Admin Rights</th>
+                                        <th class='users-table-center'>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -57,8 +60,16 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                         if ($result->num_rows > 0) {
                                         // output data of each row
                                         while($row = $result->fetch_assoc()) {
-                                            echo "<tr><td>" . $row["id"]. "</td><td>" . $row["username"] . "</td><td>" . $row["email"] . "</td>
-                                            <td>" . $row["adminuser"]. "</td></tr>";
+                                            echo "<tr>
+                                            <td class='users-table-center'>" . $row["id"]. "</td>
+                                            <td class='users-table-center'>" . $row["username"] . "</td>
+                                            <td class='users-table-center'>" . $row["email"] . "</td>
+                                            <td class='users-table-center'>" . $row["adminuser"]. "</td>
+                                            <td class='users-table-center'>
+                                                <a class='btn btn-danger' href='deleteuserhandler.php?id=".$row["id"]."'>Delete User</a>
+                                                <a class='btn btn-primary' style='margin-left: 20px' href='changeadminrightshandler.php?id=".$row["id"]."&adminuser=".$row["adminuser"]."'>Change Admin Rigths</a>
+                                            </td>
+                                            </tr>";
                                         }
                                         echo "</table>";
                                         } else { echo "0 results"; }

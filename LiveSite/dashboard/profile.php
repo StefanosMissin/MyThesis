@@ -11,10 +11,10 @@
     ?>
 
 
-    <!-- Navigation Location Title -->
-    <?php
-        $navloctitle = 'Profile';
-    ?>
+        <!-- Navigation Location Title -->
+        <?php
+            $navloctitle = 'Profile';
+        ?>
 
         <!-- Include head tag -->
         <?php include 'static/head.html';?>

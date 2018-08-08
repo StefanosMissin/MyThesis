@@ -44,46 +44,62 @@
 
 
 <!-- Chartsjs.org -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
-    <!-- <script src="charts/ajax.js"></script> -->
-    <script src="charts/indoordata.js"></script>
-    <script src="charts/outdoordata.js"></script>
-    
-    <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+<!-- <script src="charts/ajax.js"></script> -->
+<script src="charts/indoordata.js"></script>
+<script src="charts/outdoordata.js"></script>
+
+<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
 
 <!-- ============================================================== -->
 <!-- This page plugins -->
 <!-- ============================================================== -->
 
+
+<!-- Support Modal Script -->
 <script>
-  $('#SupportModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('Support Form')
-  modal.find('.modal-body input').val(recipient)
-})
+    $('#SupportModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('Support Form')
+        modal.find('.modal-body input').val(recipient)
+    })
 </script>
 
+
+<!-- // Current Time Script -->
 <script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('clock').innerHTML =
-    'Current Time:' + '  ' + h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('clock').innerHTML =
+            'Current Time:' + '  ' + h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i
+        }; // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+
+<!-- Delete User Notification Script -->
+<script language="JavaScript">
+    if (window.location.pathname + window.location.search == '/MyThesis/LiveSite/dashboard/userstable.php?USERDELETED') {
+        alert('USER DELETED');
+    } else {
+        console.log(location.pathname + window.location.search);
+    }
 </script>
 
 </body>
