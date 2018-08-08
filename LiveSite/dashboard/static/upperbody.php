@@ -111,11 +111,18 @@
                             if ($_SESSION['adminuser'] == 'yes'){
 
                                 echo " <li>
-                                <a class='waves-effect waves-dark' href='newuserreg.php' aria-expanded='false'>
-                                    <i class='mdi mdi-account-plus'></i>
-                                    <span class='hide-menu'>Register User</span>
-                                </a>
-                            </li> ";
+                                            <a class='waves-effect waves-dark' href='userstable.php' aria-expanded='false'>
+                                                <i class='mdi mdi-table'></i>
+                                                <span class='hide-menu'>Users</span>
+                                            </a>
+                                        </li> 
+                                        <li>
+                                            <a class='waves-effect waves-dark' href='newuserreg.php' aria-expanded='false'>
+                                                <i class='mdi mdi-account-plus'></i>
+                                                <span class='hide-menu'>Register User</span>
+                                            </a>
+                                        </li>
+                                        ";
                                 
                             }
 
