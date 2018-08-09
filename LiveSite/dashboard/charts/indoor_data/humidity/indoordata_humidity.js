@@ -1,26 +1,26 @@
 $(document).ready(function(){
 	$.ajax({
-		url: "http://localhost:8080/testing/chartjs/data.php",
+		url: "http://localhost:8080/MyThesis/LiveSite/dashboard/charts/indoor_data/humidity/indoor_data_humidity_get.php",
 		method: "GET",
 		success: function(data) {
 			console.log(data);
-			var player = [];
-			var score = [];
+			var time = [];
+			var humi = [];
 
 			for(var i in data) {
-				player.push("Player " + data[i].playerid);
-				score.push(data[i].score);
+				time.push(data[i].event);
+				humi.push(data[i].humidity);
 			}
 
 			var chartdata = {
-				labels: player,
+				labels: time,
 				datasets : [
 					{
-						label: 'Player Score',
+						label: 'Indoor Humidity',
                         backgroundColor: 
                         [
-                            'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
                             'rgba(255, 206, 86, 0.2)',
                             'rgba(75, 192, 192, 0.2)',
 							'rgba(153, 102, 255, 0.2)',
@@ -53,8 +53,8 @@ $(document).ready(function(){
                         ],
                         borderColor: 
                         [
-                            'rgba(255,99,132,1)',
                             'rgba(54, 162, 235, 1)',
+                            'rgba(255,99,132,1)',
                             'rgba(255, 206, 86, 1)',
                             'rgba(75, 192, 192, 1)',
 							'rgba(153, 102, 255, 1)',
@@ -76,14 +76,14 @@ $(document).ready(function(){
                             'rgba(255, 159, 64, 1)'
 						],
 						borderWidth: 4,
-						data: score
+						data: humi
 					}
                 ]
                 
             };
             
 
-			var ctx = $("#playerdata");
+			var ctx = $("#indoor_data_humidity");
 
 			var barGraph = new Chart(ctx, {
 				type: 'bar',

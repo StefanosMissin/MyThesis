@@ -28,36 +28,90 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
         <!-- Start Page Content -->
         <!-- ============================================================== -->
-        <!-- Column -->
-        <div class="col-lg-6 col-xlg-6 col-md-7">
-            <div class="card">
-                <div class="card-block">
-                    <canvas id="IndoorData"></canvas>
-                </div>
-            </div>
-        </div>
-        <!-- Column -->
 
 
-        <!-- Column -->
-        <div class="col-lg-6 col-xlg-6 col-md-7">
-            <div class="card">
-                <div class="card-block">
-                    <canvas id="OutdoorData"></canvas>
-                </div>
+        <!-- START INDOOR DATA DISPLAY -->
+        <div class="row">
+             <!-- Column -->
+             <div class="col-lg-12 col-xlg-12 col-md-12">
+                <p class="display-data-title">Display Indoor Data</p>
             </div>
+            <!-- Column -->
         </div>
-        <!-- Column -->
 
-        <!-- Column -->
-        <div class="col-lg-3 col-xlg-3 col-md-4">
-            <div class="card">
-                <div class="card-block" style="text-align: center">
-                         <iframe src="http://smissinhome.ddns.net:61459" frameBorder="0" width="120px" height="100px"></iframe>
+
+        <div class="row">
+            <!-- Column -->
+            <div class="col-lg-6 col-xlg-6 col-md-7">
+                <div class="card">
+                    <div class="card-block">
+                        <canvas id="indoor_data_temp"></canvas>
+                    </div>
                 </div>
             </div>
+            <!-- Column -->
+            <!-- Column -->
+            <div class="col-lg-6 col-xlg-6 col-md-7">
+                <div class="card">
+                    <div class="card-block">
+                        <canvas id="indoor_data_humidity"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
         </div>
-        <!-- Column -->
+
+        <!-- END INDOOR DATA DISPLAY -->
+
+        <!-- START OUTDOOR DATA DISPLAY -->
+        <div class="row">
+             <!-- Column -->
+             <div class="col-lg-12 col-xlg-12 col-md-12">
+                <p class="display-data-title">Display Outdoor Data</p>
+            </div>
+            <!-- Column -->
+        </div>
+
+        <div class="row">
+            <!-- Column -->
+            <div class="col-lg-6 col-xlg-6 col-md-7">
+                <div class="card">
+                    <div class="card-block">
+                        <canvas id="outdoor_data_temp"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <!-- Column -->
+            <div class="col-lg-6 col-xlg-6 col-md-7">
+                <div class="card">
+                    <div class="card-block">
+                        <canvas id="outdoor_data_humidity"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+        </div>
+        <!-- END OUTDOOR DATA DISPLAY -->
+
+
+
+
+        <div class="row">
+            <!-- Column -->
+            <div class="col-lg-4 col-xlg-4 col-md-4">
+            </div>
+            <!-- Column -->
+            <!-- Column -->
+            <div class="col-lg-4 col-xlg-4 col-md-4">
+                <div class="card">
+                    <div class="card-block" style="text-align: center">
+                        <iframe src="http://smissinhome.ddns.net:61459" frameBorder="0" width="120px" height="100px"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+        </div>
 
 
 
