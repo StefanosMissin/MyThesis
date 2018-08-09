@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2018 at 06:11 PM
+-- Generation Time: Aug 09, 2018 at 05:59 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -64,16 +64,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `email`, `adminuser`, `password`, `created_at`) VALUES
-(1, 'Stefanos missin', 'admin@stefanosmissin.com', 'yes', '$2y$10$uOKzRUo6IhNXBP9A7bEUmu7Z1ZhsBNxMx/A9XK4IbeHQdQnLS7s.S', '2018-08-07 17:30:35'),
-(2, 'Christina Parra', 'xristinaparra1995@gmail.com', 'no', '$2y$10$2ZgDSTpTQRMzZKBatahiX.qNDfVa3QucGgjvN5jXN5tanwmrQ0mxa', '2018-08-07 17:31:16'),
-(3, 'Test', 'test@test.com', 'yes', '$2y$10$Di1rapB31grlkbGDbgUsDetqahkwPAHxQSnUzzjUJZLjbzBeB.W9e', '2018-08-07 17:48:58'),
-(4, 'Kimon Missin', 'kimon@missin.com', 'yes', '$2y$10$UZuW2FosBAc1dYieZf2n9eHU0zFHT3s2AM3gOqLMQ5XiMfZGVQe2y', '2018-08-08 16:12:16');
-
---
 -- Indexes for dumped tables
 --
 
@@ -110,7 +100,7 @@ ALTER TABLE `indoor_data`
 -- AUTO_INCREMENT for table `outdoor_data`
 --
 ALTER TABLE `outdoor_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
