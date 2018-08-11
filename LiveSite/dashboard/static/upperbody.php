@@ -107,6 +107,12 @@
                                 <span class="hide-menu">Profile</span>
                             </a>
                         </li>
+                        <li>
+                            <a class="waves-effect waves-dark" href="livemonitoring.php" aria-expanded="false">
+                                <i class="mdi mdi-access-point"></i>
+                                <span class="hide-menu">Live Monitoring</span>
+                            </a>
+                        </li>
                         <?php
                             if ($_SESSION['adminuser'] == 'yes'){
 

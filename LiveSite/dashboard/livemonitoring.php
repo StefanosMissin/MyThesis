@@ -12,7 +12,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
     <!-- Navigation Location Title -->
     <?php
-        $navloctitle = 'Dashboard';
+        $navloctitle = 'Live Monitoring';
     ?>
 
         <!-- Include head tag -->
@@ -45,7 +45,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             <div class="col-lg-6 col-xlg-6 col-md-7">
                 <div class="card">
                     <div class="card-block">
-                        <canvas id="indoor_data_temp"></canvas>
+                        <canvas id="indoor_data_temp_live"></canvas>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             <div class="col-lg-6 col-xlg-6 col-md-7">
                 <div class="card">
                     <div class="card-block">
-                        <canvas id="indoor_data_humidity"></canvas>
+                        <canvas id="indoor_data_humidity_live"></canvas>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             <div class="col-lg-6 col-xlg-6 col-md-7">
                 <div class="card">
                     <div class="card-block">
-                        <canvas id="outdoor_data_temp"></canvas>
+                        <canvas id="outdoor_data_temp_live"></canvas>
                     </div>
                 </div>
             </div>
@@ -86,32 +86,13 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             <div class="col-lg-6 col-xlg-6 col-md-7">
                 <div class="card">
                     <div class="card-block">
-                        <canvas id="outdoor_data_humidity"></canvas>
+                        <canvas id="outdoor_data_humidity_live"></canvas>
                     </div>
                 </div>
             </div>
             <!-- Column -->
         </div>
         <!-- END OUTDOOR DATA DISPLAY -->
-
-
-
-
-        <div class="row">
-            <!-- Column -->
-            <div class="col-lg-4 col-xlg-4 col-md-4">
-            </div>
-            <!-- Column -->
-            <!-- Column -->
-            <div class="col-lg-4 col-xlg-4 col-md-4">
-                <div class="card">
-                    <div class="card-block" style="text-align: center">
-                        <iframe src="http://smissinhome.ddns.net:61459" frameBorder="0" width="120px" height="100px"></iframe>
-                    </div>
-                </div>
-            </div>
-            <!-- Column -->
-        </div>
 
 
 
