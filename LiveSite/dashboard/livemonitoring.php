@@ -10,6 +10,10 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
 ?>
 
+<?php
+    header("Refresh:10");
+?>
+
     <!-- Navigation Location Title -->
     <?php
         $navloctitle = 'Live Monitoring';

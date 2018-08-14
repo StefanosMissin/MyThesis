@@ -16,7 +16,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT event, temperature FROM indoor_data ORDER BY event LIMIT 10");
+$query = sprintf("SELECT event, temperature FROM indoor_data ORDER BY id ASC LIMIT 10");
 
 //execute query
 $result = $mysqli->query($query);

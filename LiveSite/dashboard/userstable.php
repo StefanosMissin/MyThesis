@@ -30,10 +30,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         <!-- ============================================================== -->
 
         <div class="row">
-            <!-- column -->
-            <div class="col-2">
-            </div>
-            <div class="col-8">
+            <div class="col-12">
                 <div class="card">
                     <div class="card-block">
                         <h4 class="users-table-title">Registered Users Table</h4>

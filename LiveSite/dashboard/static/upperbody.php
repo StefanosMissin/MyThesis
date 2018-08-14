@@ -102,15 +102,21 @@
                             </a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="profile.php" aria-expanded="false">
-                                <i class="mdi mdi-account"></i>
-                                <span class="hide-menu">Profile</span>
+                            <a class="waves-effect waves-dark" href="livemonitoring.php" aria-expanded="false">
+                                <i class="mdi mdi-camcorder"></i>
+                                <span class="hide-menu">Live Monitoring</span>
                             </a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="livemonitoring.php" aria-expanded="false">
+                            <a class="waves-effect waves-dark" href="analytics.php" aria-expanded="false">
                                 <i class="mdi mdi-access-point"></i>
-                                <span class="hide-menu">Live Monitoring</span>
+                                <span class="hide-menu">Analytics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-dark" href="profile.php" aria-expanded="false">
+                                <i class="mdi mdi-account"></i>
+                                <span class="hide-menu">Profile</span>
                             </a>
                         </li>
                         <?php
