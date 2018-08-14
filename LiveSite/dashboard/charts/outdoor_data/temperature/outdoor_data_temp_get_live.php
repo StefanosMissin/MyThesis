@@ -16,7 +16,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT event, temperature FROM outdoor_data ORDER BY event LIMIT 10");
+$query = sprintf("SELECT event, temperature FROM outdoor_data ORDER BY id DESC LIMIT 10");
 
 //execute query
 $result = $mysqli->query($query);
@@ -27,6 +27,9 @@ foreach ($result as $row) {
 	$data[] = $row;
 }
 
+$data2 = array_reverse($data);
+
+
 //free memory associated with result
 $result->close();
 
@@ -34,4 +37,4 @@ $result->close();
 $mysqli->close();
 
 //now print the data
-print json_encode($data);
+print json_encode($data2);
