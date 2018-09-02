@@ -8,7 +8,7 @@ $(document).ready(function(){
 			var humi = [];
 
 			for(var i in data) {
-				time.push(data[i].event);
+				time.push(data[i].time);
 				humi.push(data[i].humidity);
 			}
 
@@ -114,7 +114,7 @@ $(document).ready(function(){
 			var humi = [];
 
 			for(var i in data) {
-				time.push(data[i].event);
+				time.push(data[i].time);
 				humi.push(data[i].humidity);
 			}
 

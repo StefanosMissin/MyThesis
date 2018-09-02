@@ -11,7 +11,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 ?>
 
 <?php
-    header("Refresh:10");
+    header("Refresh:120");
 ?>
 
     <!-- Navigation Location Title -->

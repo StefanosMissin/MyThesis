@@ -8,7 +8,7 @@ $(document).ready(function(){
 			var temp = [];
 
 			for(var i in data) {
-				time.push(data[i].event);
+				time.push(data[i].time);
 				temp.push(data[i].temperature);
 			}
 
@@ -114,7 +114,7 @@ $(document).ready(function(){
 			var temp = [];
 
 			for(var i in data) {
-				time.push(data[i].event);
+				time.push(data[i].time);
 				temp.push(data[i].temperature);
 			}
 
