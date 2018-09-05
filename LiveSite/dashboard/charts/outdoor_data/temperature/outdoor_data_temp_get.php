@@ -16,7 +16,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT event, temperature FROM outdoor_data ORDER BY event");
+$query = sprintf("SELECT time, temperature FROM outdoor_data ORDER BY time");
 
 //execute query
 $result = $mysqli->query($query);
