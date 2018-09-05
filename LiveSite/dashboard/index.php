@@ -106,7 +106,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             <div class="col-lg-4 col-xlg-4 col-md-4">
                 <div class="card">
                     <div class="card-block" style="text-align: center">
-                        <iframe src="http://smissinhome.ddns.net:61459" frameBorder="0" width="120px" height="100px"></iframe>
+                        <iframe src="http://192.168.1.75:8080" frameBorder="0" width="120px" height="100px"></iframe>
                     </div>
                 </div>
             </div>

@@ -54,3 +54,34 @@
     padding: 20px 0;
 
 }
+
+.analytics-table-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: #1e88e5;
+}
+
+.analytics-table-data {
+    font-size: 18px;
+    color: #000000c7;
+    font-weight: 600;
+
+}
+
+.analytics-data-max {
+    color: #fc4b6c;
+}
+
+.analytics-data-min {
+    color: #26c6da;
+}
+
+.analytics-data-avg {
+    color: #53c62d;
+}
+
+.t-center {
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$.ajax({
-		url: "http://localhost:8080/MyThesis/LiveSite/dashboard/charts/indoor_data/temperature/indoor_data_temp_get.php",
+		url: "http://192.168.1.100:8080/MyThesis/LiveSite/dashboard/charts/indoor_data/temperature/indoor_data_temp_get.php",
 		method: "GET",
 		success: function(data) {
 			console.log(data);
@@ -106,7 +106,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$.ajax({
-		url: "http://localhost:8080/MyThesis/LiveSite/dashboard/charts/indoor_data/temperature/indoor_data_temp_get_live.php",
+		url: "http://192.168.1.100:8080/MyThesis/LiveSite/dashboard/charts/indoor_data/temperature/indoor_data_temp_get_live.php",
 		method: "GET",
 		success: function(data) {
 			console.log(data);
