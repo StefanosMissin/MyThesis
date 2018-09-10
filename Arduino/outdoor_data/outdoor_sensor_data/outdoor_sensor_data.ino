@@ -13,6 +13,12 @@ DHT dht(DHTPIN, DHTTYPE);
 const char* ssid     = "Christina";
 const char* password = "chriparr10";
 
+IPAddress ip(192, 168, 1, 77);
+IPAddress gateway(192, 168, 1, 1); 
+IPAddress subnet(255, 255, 255, 0);
+IPAddress dns1(192, 168, 1, 1);
+IPAddress dns2(192, 168, 1, 2);
+
 ESP8266WebServer server(8080);
 WiFiClient client;
 MDNSResponder mdns; //multicast Domain Name System
@@ -28,6 +34,7 @@ void setup(void)
 {
   DHT dht(DHTPIN, DHTTYPE);
   webPage += "<h1>Wemos D1 R2, Outdoor Data Sensor</h1>";
+  WiFi.config(ip, gateway, subnet, dns1, dns2);
   Serial.begin(115200);  //baude rate .... Serial connection from ESP-01 via 3.3v console cable
   delay(1000);
   Serial.println("Hii ");

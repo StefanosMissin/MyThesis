@@ -3,9 +3,10 @@
 require_once 'config.php';
  
 // Define variables and initialize with empty values
-$username = $email = $adminuser = $password = "";
+$username = $email = $adminuser = $password = $id = "";
 $username_err = $email_err = $adminuser_err = $password_err = "";
  
+$log_data = "" ;
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
@@ -26,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT username, email, adminuser, password FROM users WHERE username = ?";
+        $sql = "SELECT id,username, email, adminuser, password FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -43,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $username, $email, $adminuser, $hashed_password);
+                    mysqli_stmt_bind_result($stmt, $id,$username, $email, $adminuser, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             /* Password is correct, so start a new session and
@@ -53,6 +54,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION['password'] = $password;
                             $_SESSION['adminuser'] = $adminuser;
                             $_SESSION['email'] = $email;
+                            $_SESSION['id'] = $id;
+
+                            
+
+                            // TRACK LOGOUT ACTIVITY
+                            $conn_log=mysqli_connect("localhost","root","","smart_homie");
+                            // Check connection
+                            if (mysqli_connect_errno())
+                            {
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                            }
+
+                            // Perform queries 
+                            mysqli_query($conn_log,"INSERT INTO user_log (user_id,date,time,log) VALUES ('$id',CURRENT_DATE(), CURRENT_TIME(),'Logged In')");
+
+                            // close connection
+                            mysqli_close($conn_log);
                             
                             header("location: ../dashboard/index.php");
                         } else{
@@ -73,6 +91,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         mysqli_stmt_close($stmt);
     }
     
+    $log_data = "INSERT INTO user_log (user_id,date,time,log) VALUES ($username,CURRENT_DATE(), CURRENT_TIME(),'logged in')";
+    mysqli_query($link,$log_data);
+
     // Close connection
     mysqli_close($link);
 }

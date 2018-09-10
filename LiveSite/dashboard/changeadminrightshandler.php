@@ -20,7 +20,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// sql to delete a record
+// sql to update a record
 $sql = "UPDATE `users` SET `adminuser`='".$adminuserchange."' WHERE `id` = '$id'";
 
 

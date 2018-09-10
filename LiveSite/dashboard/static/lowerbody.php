@@ -44,14 +44,12 @@
 
 
 <!-- Chartsjs.org -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script src="js/Chart.JS-2.7.2-bundle.js"></script>
 <script src="charts/indoor_data/temperature/indoordata_temperature.js"></script>
 <script src="charts/indoor_data/humidity/indoordata_humidity.js"></script>
 <script src="charts/outdoor_data/temperature/outdoordata_temperature.js"></script>
 <script src="charts/outdoor_data/humidity/outdoordata_humidity.js"></script>
-
-
-<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+<script src="js/Chart.JS-2.7.2-utils.js"></script>
 
 <!-- ============================================================== -->
 <!-- This page plugins -->
@@ -100,6 +98,14 @@
         alert('USER DELETED');
     } else {
         console.log(location.pathname + window.location.search);
+    }
+</script>
+
+<script type="text/javascript">
+    function change_state() {
+        alert('hello');
+        $.get("status_update.php");
+        return false;
     }
 </script>
 

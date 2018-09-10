@@ -92,3 +92,25 @@
 .t-center {
     text-align: center;
 }
+
+
+.dash-user-title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.dash-user-title > span {
+    font-weight: bold;
+}
+
+.device-name {
+    padding-top: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
