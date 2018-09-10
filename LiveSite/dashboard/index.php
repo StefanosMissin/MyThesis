@@ -59,7 +59,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                         ?>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pb-39">
                     <div class="col-lg-6 col-xlg-6 col-md-6">
                         <p class="device-name">Dehumifier</p>
                     </div>
@@ -92,7 +92,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                     <div class="col-lg-6 col-xlg-6 col-md-6">
                         <img src="assets/images/icons/air-conditioner.png" style="margin-left: 5px" width="100">
                     </div>
-                    <div class="col-lg-6 col-xlg-6 col-md-6">
+                    <div class="col-lg-6 col-xlg-6 col-md-6 pt-25">
                         <a class='btn' style='background-color: #26c6da; border-color: #26c6da; color: #fff;' href='devicesstatehandler.php?id=1&status=on'>Turn
                             On AC</a>
                         <a class='btn' style='background-color: #26c6da; border-color: #26c6da; color: #fff;' href='devicesstatehandler.php?id=1&status=off'>Turn
@@ -101,9 +101,9 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-xlg-6 col-md-6">
-                        <img src="assets/images/icons/air-conditioner.png" style="margin-left: 5px" width="100">
+                        <img src="assets/images/icons/dehumidifier.png" style="margin-left: 5px" width="100">
                     </div>
-                    <div class="col-lg-6 col-xlg-6 col-md-6">
+                    <div class="col-lg-6 col-xlg-6 col-md-6 pt-25">
                     <a class='btn' style='background-color: #26c6da; border-color: #26c6da; color: #fff;' href='devicesstatehandler.php?id=2&status=on'>Turn
                     On DH</a>
                 <a class='btn' style='background-color: #26c6da; border-color: #26c6da; color: #fff;' href='devicesstatehandler.php?id=2&status=off'>Turn

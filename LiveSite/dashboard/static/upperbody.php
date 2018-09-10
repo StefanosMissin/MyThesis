@@ -152,7 +152,7 @@
                     <i class="fa fa-refresh" aria-hidden="true"></i>
                 </a>
                 <!-- item-->
-                <a href="" class="link" data-toggle="modal" title="Support" data-target="#SupportModal" data-whatever="mythesis@stefanosmissin.com">
+                <a href="" class="link" data-toggle="modal" title="Support" data-target="#SupportModal" data-whatever="support@smarthomie.com">
                     <i class="fa fa-life-ring" aria-hidden="true"></i>
                 </a>
                 <!-- item-->

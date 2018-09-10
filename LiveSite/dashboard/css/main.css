@@ -93,6 +93,14 @@
     text-align: center;
 }
 
+.pt-25 {
+    padding-top: 25px;
+}
+
+.pb-39 {
+    padding-bottom: 39px;
+}
+
 
 .dash-user-title {
     text-align: center;
