@@ -10,8 +10,8 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid     = "Christina";
-const char* password = "chriparr10";
+const char* ssid     = "SmartHomie";
+const char* password = "!smarthomie10!";
 
 IPAddress ip(192, 168, 1, 77);
 IPAddress gateway(192, 168, 1, 1); 

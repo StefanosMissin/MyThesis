@@ -45,5 +45,5 @@ else {
 // if you didn't get a connection to the server:
 Serial.println("connection failed");
 }
-delay(120000);
+delay(300000);
 }

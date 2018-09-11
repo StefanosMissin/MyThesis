@@ -89,7 +89,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         <div class="card">
             <div class="card-block" style="text-align: center">
                 <div class="row">
-                    <div class="col-lg-6 col-xlg-6 col-md-6">
+                    <div class="col-lg-6 col-xlg-6 col-md-6 pb-39">
                         <img src="assets/images/icons/air-conditioner.png" style="margin-left: 5px" width="100">
                     </div>
                     <div class="col-lg-6 col-xlg-6 col-md-6 pt-25">
