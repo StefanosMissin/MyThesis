@@ -68,7 +68,6 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                             </td>
                                             </tr>";
                                         }
-                                        echo "</table>";
                                         } else { echo "0 results"; }
                                         $conn->close();
                                     ?>
