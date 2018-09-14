@@ -107,7 +107,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     <div class="col-lg-6 col-xlg-6 col-md-6">
         <div class="card">
             <div class="card-block">
-                <p class="analytics-table-title t-center">Last Three Days</p>
+                <p class="analytics-table-title t-center cur-poin" onclick="window.location.href='analytics_outdoor_threedays.php';">Last Three Days</p>
                 <div class="row">
                     <div class="col-lg-6 col-xlg-6 col-md-6">
                         <p class="analytics-table-data t-center">Temperature:</p>
@@ -153,7 +153,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     <div class="col-lg-6 col-xlg-6 col-md-6">
         <div class="card">
             <div class="card-block">
-                <p class="analytics-table-title t-center">Last Week</p>
+                <p class="analytics-table-title t-center cur-poin" onclick="window.location.href='analytics_outdoor_sevendays.php';">Last Week</p>
                 <div class="row">
                     <div class="col-lg-6 col-xlg-6 col-md-6">
                         <p class="analytics-table-data t-center">Temperature:</p>
@@ -196,7 +196,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     <div class="col-lg-6 col-xlg-6 col-md-6">
         <div class="card">
             <div class="card-block">
-                <p class="analytics-table-title t-center">Last Month</p>
+                <p class="analytics-table-title t-center cur-poin" onclick="window.location.href='analytics_outdoor_month.php';">Last Month</p>
                 <div class="row">
                     <div class="col-lg-6 col-xlg-6 col-md-6">
                         <p class="analytics-table-data t-center">Temperature:</p>

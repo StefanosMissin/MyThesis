@@ -124,6 +124,10 @@
     text-align: center;
 }
 
+.cur-poin {
+    cursor: pointer;
+}
+
 
 
 
