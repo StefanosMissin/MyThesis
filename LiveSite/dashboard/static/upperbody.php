@@ -19,13 +19,18 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="">
-                        <b class="logo-text">S
-                            <span>mart</span>
-                            <span> </span>H
-                            <span>omie</span>
+                    <a class="navbar-brand" href="index.php">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            
+                            <!-- Light Logo icon -->
+                            <img src="assets/images/icons/logo-light.png" alt="homepage" class="light-logo disp-none">
                         </b>
-                    </a>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span style="">
+                         
+                         <!-- Light Logo text -->    
+                         <img src="assets/images/icons/logo.png" class="light-logo" alt="homepage"></span> </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
