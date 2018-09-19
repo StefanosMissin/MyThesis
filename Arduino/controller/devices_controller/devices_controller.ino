@@ -97,10 +97,21 @@ client.println("HTTP/1.1 200 OK"); //send new page
         
             client.println("<TITLE>Home Automation</TITLE>");
             client.println("<center>");
+            client.println("<link rel='stylesheet' href='http://192.168.1.100:8080/MyThesis/livesite/dashboard/css/arduino_controller.css'>");
             client.println("</HEAD>");
             client.println("<BODY>");
             client.println("<center>");
-            client.println("<p style='font-size:32px; font-weight: 900;'>Executing Command...</p>");
+                  client.println("<div class='cs-loader'></div>");
+                  client.println("<div class='cs-loader'></div>");
+                  client.println("<div class='cs-loader-inner'></div>");
+                  client.println("<label>  ●</label>");
+                  client.println("<label> ●</label>");
+                  client.println("<label> ●</label>");
+                  client.println("<label> ●</label>");
+                  client.println("<label> ●</label>");
+                  client.println("<label> ●</label>");
+                  client.println("</div>");
+                  client.println("</div>");
 
             client.println("<script>");
             client.println("if (window.location.pathname + window.location.search == '/?acon' || window.location.pathname + window.location.search == '/?acoff' || window.location.pathname + window.location.search == '/?dhon' || window.location.pathname + window.location.search == '/?dhoff' ) {");
