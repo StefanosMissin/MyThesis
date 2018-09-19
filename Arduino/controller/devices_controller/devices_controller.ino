@@ -101,15 +101,14 @@ client.println("HTTP/1.1 200 OK"); //send new page
             client.println("</HEAD>");
             client.println("<BODY>");
             client.println("<center>");
-                  client.println("<div class='cs-loader'></div>");
-                  client.println("<div class='cs-loader'></div>");
-                  client.println("<div class='cs-loader-inner'></div>");
-                  client.println("<label>  ●</label>");
-                  client.println("<label> ●</label>");
-                  client.println("<label> ●</label>");
-                  client.println("<label> ●</label>");
-                  client.println("<label> ●</label>");
-                  client.println("<label> ●</label>");
+                  client.println("<div class='cs-loader'>");
+                  client.println("<div class='cs-loader-inner'>");
+                  client.println("<label> .</label>");
+                  client.println("<label> .</label>");
+                  client.println("<label> .</label>");
+                  client.println("<label> .</label>");
+                  client.println("<label> .</label>");
+                  client.println("<label> .</label>");
                   client.println("</div>");
                   client.println("</div>");
 
