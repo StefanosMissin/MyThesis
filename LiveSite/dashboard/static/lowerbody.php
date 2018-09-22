@@ -92,6 +92,42 @@
     }
 </script>
 
+<!-- Notification Triggers -->
+<script language="JavaScript">
+    if (window.location.pathname + window.location.search == '/MyThesis/LiveSite/dashboard/index.php?acon') {
+
+        $("#not-acon").removeClass("disp-not");
+
+        $(".close").click(function () {
+            $(this).parent().addClass("disp-not");
+        });
+    }
+    if (window.location.pathname + window.location.search == '/MyThesis/LiveSite/dashboard/index.php?acoff') {
+
+        $("#not-acoff").removeClass("disp-not");
+
+        $(".close").click(function () {
+            $(this).parent().addClass("disp-not");
+        });
+    }
+    if (window.location.pathname + window.location.search == '/MyThesis/LiveSite/dashboard/index.php?dhon') {
+
+        $("#not-dhon").removeClass("disp-not");
+
+        $(".close").click(function () {
+            $(this).parent().addClass("disp-not");
+        });
+    }
+    if (window.location.pathname + window.location.search == '/MyThesis/LiveSite/dashboard/index.php?dhoff') {
+
+        $("#not-dhoff").removeClass("disp-not");
+
+        $(".close").click(function () {
+            $(this).parent().addClass("disp-not");
+        });
+    }
+</script>
+
 <!-- Delete User Notification Script -->
 <script language="JavaScript">
     if (window.location.pathname + window.location.search == '/MyThesis/livesite/dashboard/userstable.php?USERDELETED') {

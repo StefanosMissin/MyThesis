@@ -113,8 +113,20 @@ client.println("HTTP/1.1 200 OK"); //send new page
                   client.println("</div>");
 
             client.println("<script>");
-            client.println("if (window.location.pathname + window.location.search == '/?acon' || window.location.pathname + window.location.search == '/?acoff' || window.location.pathname + window.location.search == '/?dhon' || window.location.pathname + window.location.search == '/?dhoff' ) {");
-            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/');");
+            client.println("if (window.location.pathname + window.location.search == '/?acon') {");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?acon');");
+            client.println("} else {");
+            client.println("console.log(location.pathname + window.location.search); }");
+            client.println("if (window.location.pathname + window.location.search == '/?acoff') {");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?acoff');");
+            client.println("} else {");
+            client.println("console.log(location.pathname + window.location.search); }");
+            client.println("if (window.location.pathname + window.location.search == '/?dhon') {");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?dhon');");
+            client.println("} else {");
+            client.println("console.log(location.pathname + window.location.search); }");
+            client.println("if (window.location.pathname + window.location.search == '/?dhoff') {");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?dhoff');");
             client.println("} else {");
             client.println("console.log(location.pathname + window.location.search); }");
             client.println("</script>");

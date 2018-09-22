@@ -32,6 +32,19 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <!-- Start Page Content -->
 <!-- ============================================================== -->
 
+	<div id="not-acon" class="notification success disp-not">
+		<span class="title">Success</span>Air Condition Status: ON<span class="close">X</span>
+    </div>
+    <div id="not-acoff" class="notification success disp-not">
+		<span class="title">Success</span>Air Condition Status: OFF<span class="close">X</span>
+    </div>
+    <div id="not-dhon" class="notification success disp-not">
+		<span class="title">Success</span>Dehumidifier Status: ON<span class="close">X</span>
+    </div>
+    <div id="not-dhoff" class="notification success disp-not">
+		<span class="title">Success</span>Dehumidifier Status: OFF<span class="close">X</span>
+	</div>
+
 <div class="row">
 
     <!-- Column -->
@@ -179,9 +192,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     }
 ?>
 
-<div class="row">
 
-</div>
 
 
 
