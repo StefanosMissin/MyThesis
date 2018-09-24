@@ -1,321 +1,233 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico"/>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-
-    <!-- Font Awesome CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-    <!-- Owl-Carousel -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
-
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/material.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-
-    <!-- Colors CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/color/blue.css" title="blue">
-
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-
-    <!-- Modernizer js -->
-    <script src="assets/js/modernizr.custom.js"></script>
-
+    <meta charset="utf-8" />
     <title>Smart Homie</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="css/google-font.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- THEME STYLES -->
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
+<!-- END HEAD -->
 
-<body class="index">
+<!-- BODY -->
 
-    <!-- Start Off=Canvas Navigation Section -->
-    <div class="menu-wrap">
-        <nav class="menu">
-            <div class="icon-list">
-                <a href="#home" class="logo page-scroll waves-effect">Smart Homie</a>
-                <a href="#about-us" class="page-scroll waves-effect">
-                    <i class="fa fa-fw fa-book"></i>
-                    <span>About</span>
-                </a>
-                <a href="#team" class="page-scroll waves-effect">
-                    <i class="fa fa-fw fa-users"></i>
-                    <span>Our Team</span>
-                </a>
-                <a href="#service" class="page-scroll waves-effect">
-                    <i class="fa fa-fw fa-bar-chart-o"></i>
-                    <span>Features</span>
-                </a>
-                <a href="user/register.php" class="page-scroll waves-effect">
-                    <i class="fa fa-fw fa-address-card"></i>
-                    <span>Register</span>
-                </a>
-                <a href="user/login.php" class="page-scroll waves-effect">
-                    <i class="fa fa-fw fa-sign-in"></i>
-                    <span>Log In</span>
-                </a>
-            </div>
-        </nav>
-        <button class="close-button" id="close-button">Close Menu</button>
-    </div>
-    <button class="menu-button waves-effect" id="open-button">Open Menu</button>
-    <!-- End Off-Canvas Navigation Section -->
+<body>
 
-    <!-- ***************************************************************** -->
-    <!-- Start Header Section -->
-    <!-- ***************************************************************** -->
-    <section class="header" id="home">
-        <div class="bg-img">
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
             <div class="container">
-                <div class="intro-text">
-                    <h1>Welcome To The
-                        <span>Smart Homie</span>
-                    </h1>
-                    <p>The ultimate smart home, neural network equiped solution
-                        <br> to give you the best energy efficiency</p>
-                    <a href="user/register.php" class="page-scroll waves-effect btn btn-primary">Register</a>
-                    <a href="user/login.php" class="page-scroll waves-effect btn btn-primary">Log in</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Header Section -->
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
 
-    <!-- Start About Us Section -->
-    <section id="about-us" class="about-us-section-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title text-center">
-                        <h2>About Us</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    <!-- Logo -->
+                    <div class="navbar-logo">
+                        <a class="navbar-logo-wrap" href="index.html">
+                            <img class="navbar-logo-img" src="img/logo.png" alt="Acidus Logo">
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-md-4 col-sm-4">
-                    <div class="welcome-section text-center waves-effect">
-                        <img src="assets/images/about/photo-2.jpg" class="img-responsive" alt="..">
-                        <h4>Office Philosophy</h4>
-                        <div class="border"></div>
-                        <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
-                            Lorem reprehenderit</p>
-                    </div>
+                    <!-- End Logo -->
                 </div>
 
-                <div class="col-md-4 col-sm-4">
-                    <div class="welcome-section text-center waves-effect">
-                        <img src="assets/images/about/photo-1.jpg" class="img-responsive" alt="..">
-                        <h4>Our Mission & Vission</h4>
-                        <div class="border"></div>
-                        <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
-                            Lorem reprehenderit</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4">
-                    <div class="welcome-section text-center waves-effect">
-                        <img src="assets/images/about/photo-3.jpg" class="img-responsive" alt="..">
-                        <h4>Office Value & Rules</h4>
-                        <div class="border"></div>
-                        <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
-                            Lorem reprehenderit</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.row -->
-
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- End About Us Section -->
-
-    <!-- Start Team Member Section -->
-    <section id="team" class="team-member-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title text-center">
-                        <h2 class="pb-50">Our Team</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-6 offset-md-4">
-                    <div class="team-member">
-                        <img src="assets/images/team/smissin.jpg" class="img-responsive" alt="">
-                        <div class="team-details">
-                            <h4>Stefanos Missin</h4>
-                            <div class="designation">Founder & Director</div>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End Team Member Section -->
-
-    <!-- Start Service Section -->
-    <section id="service" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center">
-                        <h2>Features</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service waves-effect">
-                        <i class="fa fa-magic"></i>
-                        <div class="border"></div>
-                        <div class="service-content">
-                            <h4>Custom Platform</h4>
-                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur
-                                reprehenderit
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service waves-effect">
-                        <i class="fa fa-line-chart"></i>
-                        <div class="border"></div>
-                        <div class="service-content">
-                            <h4>Advanced Analytics</h4>
-                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur
-                                reprehenderit
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service waves-effect">
-                        <i class="fa fa-television"></i>
-                        <div class="border"></div>
-                        <div class="service-content">
-                            <h4>Live Monitoring</h4>
-                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur
-                                reprehenderit
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service waves-effect">
-                        <i class="fa fa-code-fork"></i>
-                        <div class="border"></div>
-                        <div class="service-content">
-                            <h4>Self Training</h4>
-                            <p>Duis aute irure dolor inreprehen derit voluptate velit esse cillum dolore fugiat nulla pariatur
-                                reprehenderit
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-md-3 -->
-            </div>
-        </div>
-    </section>
-    <!-- End Service Section -->
-
-    <!-- Start Footer Section -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <span class="copyright"> &copy; Smart Homie 2018.
-                    </span>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="footer-link">
-                        <ul class="pull-right">
-                            <li>
-                                <span>Coded by</span>
-                                <a href="https://stefanosmissin.com">Stefanos Missin</a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="navbar-nav navbar-nav-right">
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-item-child active" href="index.html">
+                                    Home
+                                </a>
                             </li>
+                            <!-- End Home -->
+                            <!-- Register -->
+                            <li class="nav-item">
+                                <a class="nav-item-child" href="user/register.php">
+                                    Register
+                                </a>
+                            </li>
+                            <!-- End Register -->
+                            <!-- Login -->
+                            <li class="nav-item">
+                                <a class="nav-item-child" href="user/login.php">
+                                    Login
+                                </a>
+                            </li>
+                            <!-- End Login -->
                         </ul>
                     </div>
                 </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Work -->
+    <div class="bg-color-sky-light bg-color">
+        <div class="content-md container">
+            <!-- Masonry Grid -->
+            <div class="masonry-grid">
+                <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-6"></div>
+                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-6">
+                    <!-- Work -->
+                    <div class="work">
+                        <div class="work-overlay">
+                            <img class="full-width img-responsive" src="img/register.PNG" alt="Portfolio Image">
+                        </div>
+                        <div class="work-content">
+                            <h3 class="color-white margin-b-5">◆ Register = Ready to Roll</h3>
+                            <p class="color-white margin-b-0">Simply register a new user and you are ready to unlock the full potentials of Smart Homie</p>
+                        </div>
+                        <a class="content-wrapper-link" href="#"></a>
+                    </div>
+                    <!-- End Work -->
+                </div>
+                <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-6">
+                    <!-- Work -->
+                    <div class="work">
+                        <div class="work-overlay">
+                            <img class="full-width img-responsive" src="img/chart.PNG" alt="Portfolio Image">
+                        </div>
+                        <div class="work-content">
+                            <h3 class="color-white margin-b-5">◆ Live Monitoring</h3>
+                            <p class="color-white margin-b-0">Monitor interior and exterior temperature and humidity via advanced sensors</p>
+                        </div>
+                        <a class="content-wrapper-link" href="#"></a>
+                    </div>
+                    <!-- End Work -->
+                </div>
+                <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-6">
+                    <!-- Work -->
+                    <div class="work">
+                        <div class="work-overlay">
+                            <img class="full-width img-responsive" src="img/analytics.PNG" alt="Portfolio Image">
+                        </div>
+                        <div class="work-content">
+                            <h3 class="color-white margin-b-5">◆ Advanced Analytics</h3>
+                            <p class="color-white margin-b-0">Analyze your data and make decisions for better energy consumption up to an entirely month.</p>
+                        </div>
+                        <a class="content-wrapper-link" href="#"></a>
+                    </div>
+                    <!-- End Work -->
+                </div>
+            </div>
+            <!-- End Masonry Grid -->
+        </div>
+    </div>
+    <!-- End Work -->
+
+    <!-- Features -->
+    <div class="section-seperator">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                        <h3>◆ Register = Ready to roll</h3>
+                        <p>Simply register a new user and you are ready to unlock the full potentials of Smart Homie</p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                        <h3>◆ Live Monitoring</h3>
+                        <p>Monitor interior and exterior temperature and humidity via advanced sensors</p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                        <h3>◆ Advanced Analytics</h3>
+                        <p>Analyze your data and make decisions for better energy consumption up to an entirely month.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!-- End Features -->
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <!-- Links -->
+        <div class="section-seperator bg-color">
+            <div class="content-md container">
+                <div class="row">
+                    <div class="col-sm-2 sm-margin-b-30">
+                        <!-- List -->
+                        <ul class="list-unstyled footer-list">
+                            <li class="footer-list-item"><a href="#">Home</a></li>
+                            <li class="footer-list-item"><a href="user/register.php">Register</a></li>
+                            <li class="footer-list-item"><a href="user/login.php">Login</a></li>
+                        </ul>
+                        <!-- End List -->
+                    </div>
+
+                </div>
+                <!--// end row -->
             </div>
         </div>
+        <!-- End Links -->
+
+        <!-- Copyright -->
+        <div class="content container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <img class="footer-logo" src="img/logo.png" alt="Acidus Logo">
+                </div>
+                <div class="col-xs-6 text-right">
+                    <p class="margin-b-0">Diploma Thesis 2018 - <span style="font-weight: 900; font-size:16px;">Smart Homie</span> </p>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+        <!-- End Copyright -->
     </footer>
-    <!-- End Footer Section -->
+    <!--========== END FOOTER ==========-->
+
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- CORE PLUGINS -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="js/jquery.back-to-top.js" type="text/javascript"></script>
 
 
+    <script src="js/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 
+    <!-- PAGE LEVEL SCRIPTS -->
 
-
-    <!-- SCRIPTS -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/count-to.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <!-- Materialize js -->
-    <script src="assets/js/material.js"></script>
-
-    <!-- Custom JavaScript -->
-    <script src="assets/js/script.js"></script>
-
-
+    <script src="js/masonry.min.js" type="text/javascript"></script>
 
 </body>
+<!-- END BODY -->
 
 </html>
