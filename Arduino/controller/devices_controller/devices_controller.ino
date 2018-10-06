@@ -97,7 +97,7 @@ client.println("HTTP/1.1 200 OK"); //send new page
         
             client.println("<TITLE>Home Automation</TITLE>");
             client.println("<center>");
-            client.println("<link rel='stylesheet' href='http://192.168.1.100:8080/MyThesis/livesite/dashboard/css/arduino_controller.css'>");
+            client.println("<link rel='stylesheet' href='http://192.168.1.100:8080/MyThesis/LiveSite/dashboard/css/arduino_controller.css'>");
             client.println("</HEAD>");
             client.println("<BODY>");
             client.println("<center>");
@@ -114,19 +114,19 @@ client.println("HTTP/1.1 200 OK"); //send new page
 
             client.println("<script>");
             client.println("if (window.location.pathname + window.location.search == '/?acon') {");
-            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?acon');");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/LiveSite/dashboard/index.php?acon');");
             client.println("} else {");
             client.println("console.log(location.pathname + window.location.search); }");
             client.println("if (window.location.pathname + window.location.search == '/?acoff') {");
-            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?acoff');");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/LiveSite/dashboard/index.php?acoff');");
             client.println("} else {");
             client.println("console.log(location.pathname + window.location.search); }");
             client.println("if (window.location.pathname + window.location.search == '/?dhon') {");
-            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?dhon');");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/LiveSite/dashboard/index.php?dhon');");
             client.println("} else {");
             client.println("console.log(location.pathname + window.location.search); }");
             client.println("if (window.location.pathname + window.location.search == '/?dhoff') {");
-            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/livesite/dashboard/index.php?dhoff');");
+            client.println("window.location.replace('http://192.168.1.100:8080/MyThesis/LiveSite/dashboard/index.php?dhoff');");
             client.println("} else {");
             client.println("console.log(location.pathname + window.location.search); }");
             client.println("</script>");
