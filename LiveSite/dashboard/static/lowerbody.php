@@ -130,7 +130,7 @@
 
 <!-- Delete User Notification Script -->
 <script language="JavaScript">
-    if (window.location.pathname + window.location.search == '/MyThesis/livesite/dashboard/userstable.php?USERDELETED') {
+    if (window.location.pathname + window.location.search == '/MyThesis/LiveSite/dashboard/userstable.php?USERDELETED') {
         alert('USER DELETED');
     } else {
         console.log(location.pathname + window.location.search);
